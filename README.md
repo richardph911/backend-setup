@@ -7,4 +7,4 @@
 4. **npm install express or npm install express —no-save** if dont wanna add it to the dependencies list.
 5. cài nodemon.js để tự động restart lại server khi file thay đổi. cài local nha. 
 6. vô package.json scripts cho “start”: “nodemon index.js”
-7. npm i dotenv for geting environment variable from env file
+7. npm i dotenv to call config() for geting environment variable from env file
