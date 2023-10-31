@@ -8,3 +8,5 @@
 5. cài nodemon.js để tự động restart lại server khi file thay đổi. cài local nha. 
 6. vô package.json scripts cho “start”: “nodemon index.js”
 7. npm i dotenv to call config() for geting environment variable from env file
+8. **npm install express-validator** for validate https://github.com/validatorjs/validator.js
+
