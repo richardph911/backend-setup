@@ -9,4 +9,6 @@
 6. vô package.json scripts cho “start”: “nodemon index.js”
 7. npm i dotenv to call config() for geting environment variable from env file
 8. **npm install express-validator** for validate https://github.com/validatorjs/validator.js
+9. npm install jsonwebtoken for access and refresh token
+
 

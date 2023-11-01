@@ -1,18 +1,15 @@
 // class or interface to represent user object but Class is over interface
 
 import { ObjectId } from 'mongodb'
+import { UserVerifyStatus } from '~/constants/enum'
 
-enum UserVerifyStatus {
-  Unverified, // default = 0
-  Verified, // 1
-  Banned // 2
-}
+
 
 interface UserType {
   _id?: ObjectId
-  name?: string
+  name: string
   email: string
-  date_of_birth?: Date
+  date_of_birth: Date
   password: string
   created_at?: Date
   updated_at?: Date
