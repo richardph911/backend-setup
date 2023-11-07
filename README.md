@@ -10,5 +10,6 @@
 7. npm i dotenv to call config() for geting environment variable from env file
 8. **npm install express-validator** for validate https://github.com/validatorjs/validator.js
 9. npm install jsonwebtoken and npm i @types/jsonwebtoken -D for access and refresh token HS256
+10. npm i lodash and npm i @types/lodash -D for omit method
 
 

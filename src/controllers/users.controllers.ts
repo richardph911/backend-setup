@@ -5,7 +5,6 @@ import User from '~/schemas/User.schema'
 import databaseService from '~/services/database.services'
 import usersService from '~/services/users.services'
 
-
 export const loginController = (req: Request, res: Response) => {
   const { email, password } = req.body
   if (email === 'hoangtudauphong@gmail.com' && password === '123456') {

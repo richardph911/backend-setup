@@ -1,5 +1,7 @@
 import { Request, Response, NextFunction } from 'express'
 import { body, checkSchema } from 'express-validator'
+import HTTP_STATUS from '~/constants/httpStatus'
+import { ErrorWithStatus } from '~/models/Errors'
 import usersService from '~/services/users.services'
 import { validate } from '~/utils/validation'
 
@@ -31,7 +33,7 @@ export const registerValidator = validate(
         options: async (value) => {
           const result = await usersService.checkEmailExist(value)
           if (result) {
-            throw new Error('email already exist')
+            throw new ErrorWithStatus({ message: 'Email already exist', status: 401 })
           }
           return true
         }
@@ -69,7 +71,7 @@ export const registerValidator = validate(
           'Password must be at least 6 characters long and contain at least 1 lowercase letter, 1 uppercase letter, 1 number and 1 symbol'
       },
       custom: {
-        options: (value, { req }) =>{
+        options: (value, { req }) => {
           if (value !== req.body.password) {
             throw new Error('password confirmation does not match password')
           }

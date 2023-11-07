@@ -4,7 +4,7 @@ export enum UserVerifyStatus {
   Banned // 2
 }
 
-export enum TokenType{
+export enum TokenType {
   AccessToken,
   RefreshToken,
   ForgotPasswordToken,

@@ -17,7 +17,6 @@ export const signToken = ({
         throw reject(error)
       }
       resolve(token as string)
-    }
-  ) 
-})
+    })
+  })
 }
