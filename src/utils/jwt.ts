@@ -1,4 +1,6 @@
+import { config } from 'dotenv'
 import jwt from 'jsonwebtoken'
+config()
 
 //jwt.sign(payload, secretOrPrivateKey, [options, callback])
 

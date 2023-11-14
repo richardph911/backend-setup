@@ -1,4 +1,6 @@
 import { createHash } from 'crypto'
+import { config } from 'dotenv'
+config()
 
 //for hashing password sh256
 export function sha256(content: string) {
