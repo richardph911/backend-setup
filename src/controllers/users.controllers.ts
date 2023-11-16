@@ -19,7 +19,6 @@ import usersService from '~/services/users.services'
 //need userid --> db.users.findone()
 export const loginController = async (req: Request, res: Response) => {
   const user = req.user as User
-  console.log("user here", user)
   const user_id = user._id as ObjectId
   const result = await usersService.login(user_id.toString())
   return res.json({

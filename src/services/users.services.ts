@@ -57,8 +57,6 @@ class UsersService {
       access_token,
       refresh_token
     }
-
-
   }
 }
 const usersService = new UsersService()
